@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouWork Login</title>
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('Background img.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    .container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 300px;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Logo style */
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .logo img {
+      width: 50px;  /* Smaller logo size */
+      margin-right: 10px;  /* Space between the logo and text */
+    }
+
+    .logo h2 {
+      margin: 0;
+      font-size: 24px;
+      color: #333;
+    }
+
+    /* Form styles */
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .form-group input[type="email"],
+    .form-group input[type="password"] {
+      width: 100%;
+      padding: 8px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    .form-group a {
+      display: block;
+      font-size: 12px;
+      color: #007BFF;
+      text-decoration: none;
+      margin-top: 5px;
+    }
+
+    .form-group a:hover {
+      text-decoration: underline;
+    }
+
+    /* Language options */
+    .language-options {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15px;
+      font-size: 14px;
+      color: #333;
+    }
+
+    /* Checkbox style */
+    .checkbox-group {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .checkbox-group input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+    /* Form action buttons */
+    .form-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .form-actions button {
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background: #007BFF;
+      color: white;
+    }
+
+    .btn-secondary {
+      background: #555;
+      color: white;
+    }
+
+    /* Footer styling */
+    footer {
+      position: absolute;
+      bottom: 10px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      font-size: 12px;
+      color: white;
+      text-shadow: 1px 1px 2px black;
+    }
+
+    /* Media Queries for responsiveness */
+    @media (max-width: 600px) {
+      .container {
+        width: 90%; /* Make the container take up 90% of the screen width on small screens */
+      }
+
+      .logo img {
+        width: 40px; /* Make logo smaller on mobile */
+      }
+
+      .logo h2 {
+        font-size: 20px; /* Smaller text size for mobile */
+      }
+
+      .form-group input[type="email"],
+      .form-group input[type="password"] {
+        font-size: 12px; /* Adjust font size for mobile */
+      }
+
+      .form-actions button {
+        font-size: 14px; /* Smaller buttons on mobile */
+      }
+    }
+
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="logo">
+    <img src="YW%20logo.jpg" alt="YouWork Logo">
+    <h2>YOUWORK.COM</h2>
+  </div>
+
+  <form>
+    <div class="form-group">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" placeholder="James.smith@gmail.com">
+      <a href="#">Forgot my Username?</a>
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="********">
+      <a href="#">Forgot my Password?</a>
+    </div>
+    <div class="language-options">
+      <label><input type="radio" name="language" value="arabic"> Arabic</label>
+      <label><input type="radio" name="language" value="english" checked> English</label>
+    </div>
+    <div class="checkbox-group">
+      <input type="checkbox" id="keep-signed-in">
+      <label for="keep-signed-in">Keep me signed in</label>
+    </div>
+    <div class="form-actions">
+      <button type="submit" class="btn-primary">Sign In</button>
+      <button type="button" class="btn-secondary">Create an Account</button>
+    </div>
+  </form>
+</div>
+<footer>
+  &copy; 2020 Company XYZ, Inc. All rights reserved.
+</footer>
+</body>
+</html>
